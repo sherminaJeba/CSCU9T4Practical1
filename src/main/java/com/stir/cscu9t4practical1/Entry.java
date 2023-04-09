@@ -48,7 +48,7 @@ public class Entry {
 	    return distance;
 	  } //getYear
 
-//message
+//message added
   public String getEntry() {
    String result = getName()+" ran " + getDistance() + " km in "
              +getHour()+":"+getMin()+":"+ getSec() + " on "
