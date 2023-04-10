@@ -17,24 +17,26 @@ public class TrainingRecordGUI extends JFrame implements ActionListener {
 	private JTextField mins = new JTextField(2);
 	private JTextField secs = new JTextField(2);
 	private JTextField dist = new JTextField(4);
-	private JTextField terrain = new JTextField(2);
-	private JTextField tempo = new JTextField(2);
+	private JTextField terrain = new JTextField(8);
+	private JTextField tempo = new JTextField(8);
 	private JTextField Repetitions = new JTextField(2);
 	private JTextField Recovery = new JTextField(2);
-	private JTextField where = new JTextField(2);
+	private JTextField where = new JTextField(7);
+	
 	private JLabel labn = new JLabel(" Name:");
 	private JLabel labd = new JLabel(" Day:");
 	private JLabel labm = new JLabel(" Month:");
-	private JLabel labt = new JLabel(" Terrain:");
-	private JLabel labte = new JLabel(" Tempo:");
-	private JLabel labp = new JLabel(" Pool/Outdoor:");
-	private JLabel labge = new JLabel(" Recovery:");
-	private JLabel labnum = new JLabel(" Repetitions:");
 	private JLabel laby = new JLabel(" Year:");
 	private JLabel labh = new JLabel(" Hours:");
 	private JLabel labmm = new JLabel(" Mins:");
 	private JLabel labs = new JLabel(" Secs:");
 	private JLabel labdist = new JLabel(" Distance (km):");
+	private JLabel labt = new JLabel(" Terrain:");
+	private JLabel labte = new JLabel(" Tempo:");
+	private JLabel labp = new JLabel(" Where:");
+	private JLabel labge = new JLabel(" Recovery:");
+	private JLabel labnum = new JLabel(" Repetitions:");
+	
 	private JButton add = new JButton("Add");
 	private JButton lookUpByDate = new JButton("Look Up");
 	private JButton findallbydate = new JButton("Find all by date");
@@ -145,8 +147,7 @@ public class TrainingRecordGUI extends JFrame implements ActionListener {
         int h = Integer.parseInt(hours.getText());
         int mm = Integer.parseInt(mins.getText());
         int s = Integer.parseInt(secs.getText());
-       
-      	try { 
+      
       	String ter = terrain.getText();
         String tem = tempo.getText();
       	int rec = Integer.parseInt(Recovery.getText());
@@ -162,7 +163,7 @@ public class TrainingRecordGUI extends JFrame implements ActionListener {
       	else 
      		e = new Entry(n, d, m, y, h, mm, s, km);
           myAthletes.addEntry(e);
-    	 }catch (NumberFormatException e1){}
+    	
          return message;
     }
     

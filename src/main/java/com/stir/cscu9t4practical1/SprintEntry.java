@@ -30,7 +30,7 @@ public class SprintEntry extends Entry {
 	  public String getEntry () {
 		   String result = getName()+" ran " + getDistance() + " km in "
 		             +getHour()+":"+getMin()+":"+ getSec() + " on "
-		             +getDay()+"/"+getMonth()+"/"+getYear()+" with" + getRepetitions() +" repetitions "+"\n";
+		             +getDay()+"/"+getMonth()+"/"+getYear()+" " + getRepetitions() +"  "+ getRepetitions()+ "\n";
 		   return result;
 		  } //getEntry
 }

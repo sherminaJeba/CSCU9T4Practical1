@@ -43,10 +43,10 @@ public class TrainingRecord {
 		String result = "";
 		while (iter.hasNext()) {
 			Entry current = iter.next();
-			if (n.equals(current.getName()) && current.getDay() == d && current.getMonth() == m
+			if (current.getName().equals(n) && current.getDay() == d && current.getMonth() == m
 					&& current.getYear() == y) {
 				tr.remove(current);
-				result = result+" Record Removed";
+				result = "Record is Removed";
 			}
 		}	
 		return result;

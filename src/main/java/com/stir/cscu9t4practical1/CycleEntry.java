@@ -30,7 +30,7 @@ public class CycleEntry extends Entry {
 	 public String getEntry () {
 		   String result = getName()+" ran " + getDistance() + " km in "
 		             +getHour()+":"+getMin()+":"+ getSec() + " on "
-		             +getDay()+"/"+getMonth()+"/"+getYear()+" with" + getTempo() +" speed "+"\n";
+		             +getDay()+"/"+getMonth()+"/"+getYear()+" " + getTempo() +" "+getTerrain()+"\n";
 		   return result;
 		  } //getEntry
 
