@@ -6,7 +6,7 @@ public class Entry {
   protected String name;
   protected Calendar dateAndTime;
   protected float distance;
-  
+  //Entry constructor 
   public Entry (String n, int d, int m, int y, int h, int min, int s, float dist) {
 	  name = n;
 	  Calendar inst = Calendar.getInstance();
